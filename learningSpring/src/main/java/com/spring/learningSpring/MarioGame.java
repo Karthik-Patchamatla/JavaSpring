@@ -3,8 +3,6 @@ package com.spring.learningSpring;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
-import com.spring.GamingConsole;
-
 @Component
 @Primary
 public class MarioGame implements GamingConsole {

@@ -1,16 +1,15 @@
 package com.spring.learningSpring;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
-
-import com.spring.GamingConsole;
 
 @Component
 public class GameRunner {
     private GamingConsole game;
 
     @Autowired
-    GameRunner(GamingConsole game){
+    GameRunner(@Qualifier("SuperContraQualifier") GamingConsole game){
         this.game = game;
     }
 

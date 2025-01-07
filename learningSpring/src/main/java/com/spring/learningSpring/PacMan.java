@@ -2,8 +2,6 @@ package com.spring.learningSpring;
 
 import org.springframework.stereotype.Component;
 
-import com.spring.GamingConsole;
-
 @Component
 public class PacMan implements GamingConsole {
     public void up() {
